@@ -1,3 +1,15 @@
 module.exports = {
-  plugins: []
+  siteName: `Gridsome Starter Blog`,
+  titleTemplate: `%s - Gridsome`,
+
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'blog/*.md',
+        typeName: 'BlogPost',
+        route: '/blog/:slug'
+      }
+    }
+  ]
 }

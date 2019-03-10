@@ -1,6 +1,7 @@
 {
   "name": "webpage",
   "version": 2,
+  "alias": ["f413.coloriza.me"],
   "builds": [
     {
       "src": "package.json",
